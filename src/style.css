@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    width: 100%;
+    color: white;
+    font-family: 'Roboto';
+}
+
+h5 {
+    color: darkgray;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('./images/pattern-bg-desktop.png');
+    background-size: 100%;
+    height: 30vh;
+    overflow: visible;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+    min-height: 30px;
+    height: 5vh;
+    width: 35vw;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.input {
+    width: 100%;
+    margin: 0;
+    padding-left: 25px;
+    height: 100%;
+    border: 0;
+}
+
+.button {
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 5vh;
+    border: 0;
+    background-color: rgb(37, 37, 37);
+}
+
+.dataCard {
+    z-index: 999;
+    overflow: visible;
+    position: relative;
+    bottom: -7.5vh;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 80%;
+    justify-content: space-around;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.data {
+    margin: 10px;
+}
+
+.mapContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+
+    .dataCard {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        justify-content: space-evenly;
+        position: initial;
+    }
+
+    .data {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .inputContainer {
+        width: 90%;
+        min-height: 50px;
+    }
+
+    .button {
+        width: 20%;
+    }
+
+    h1 {
+        font-size: 18px;
+        font-weight: normal;
+    }
+    
+    h2 {
+        margin: 10px;
+        font-size: 20px;
+        max-width: auto;
+    }
+    h5 {
+        margin: 0;
+    }
+}
+
+@media (max-width: 375px) { 
+    .header {
+        background-image: './images/pattern-bg-mobile.png';
+    }
+}
