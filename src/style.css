@@ -53,7 +53,6 @@ h5 {
     z-index: 999;
     overflow: visible;
     position: relative;
-    bottom: -7.5vh;
     color: black;
     display: flex;
     flex-direction: row;
